@@ -1,0 +1,36 @@
+main {
+  font-family: sans-serif;
+  display: flex;
+  display: -webkit-flex;
+}
+.chart {
+  width: 900px;
+  flex: 0 0 800px;
+}
+
+.text {
+  padding: 3em 1em;
+}
+
+.chart svg {
+  display: block;
+}
+
+.node rect {
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+.node text {
+  font-family: "Source Sans Pro";
+  font-size: 0.9em;
+}
+
+.link {
+  fill: none;
+  stroke: #024;
+  stroke-opacity: .2;
+}
+
+.link:hover, .link-active {
+  stroke-opacity: .6;
+}
