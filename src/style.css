@@ -1,15 +1,29 @@
+body {
+  min-width: 800px;
+}
 main {
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   display: -webkit-flex;
 }
+
 .chart {
-  width: 900px;
   flex: 0 0 800px;
 }
 
 .text {
   padding: 3em 1em;
+  max-width: 40em;
+}
+
+@media all and (max-width: 1200px) {
+  main {
+    -webkit-flex-flow: column;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .chart svg {
